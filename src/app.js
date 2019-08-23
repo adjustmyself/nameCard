@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
-
+const port = process.env.POST || 3000
 // define paths for express condig
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, '../templates/views')
@@ -18,10 +18,23 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
-    res.send('hello world!')
+    res.render('index', {
+
+    })
 })
 
+app.get('/introduction', (req, res) => {
+    res.render('introduction', {
 
-app.listen(3000, () => {
-    console.log('server is up on port 3000.')
+    })
+})
+
+app.get('/learn', (req, res) => {
+    res.render('learn', {
+
+    })
+})
+
+app.listen(port, () => {
+    console.log('server is up on port ' + port)
 })

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>css}}
+    <title>Main Page</title>
+    <style>
+    .image {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .themed-grid-col {
+      padding: 0;
+    }
+    </style>
+</head>
+<body>
+        {{>header}}
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 h-100 image">
+              <img src="/img/personal.jpg" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-8 themed-grid-col">
+                <div class="row h-100 no-gutters">
+                    <div class="col-12 col-md-6 h-50 themed-grid-col">
+                      <div class="card h-100">
+                        <h2 class="card-header">學歷</h2>
+                        <div class="card-body">
+                          <h5 class="card-title">弘光科技大學資訊管理學系</h5>
+                          <p class="card-text">民國99年畢業</p>
+                          <h5 class="card-title">台中高級農業學校食品科技系</h5>
+                          <p class="card-text">民國95年畢業</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 h-50 themed-grid-col">
+                      <div class="card h-100">
+                        <h2 class="card-header">工作經驗</h2>
+                        <div class="card-body">
+                          <h5 class="card-title">台通科技股份有限公司</h5>
+                          <p class="card-text">業務兼任採購 3年工作經驗(105/03~108/06)</p>    
+                          <h5 class="card-title">尚昆工業有限公司</h5>
+                          <p calss="card-text">CNC操作人員 2年工作經驗(102/08~104/09)</p>                              
+                        </div>
+                      </div>
+                    </div>                
+                    <div class="col-12 col-md-6 h-50 themed-grid-col">
+                      <div class="card h-100">
+                        <h2 class="card-header">前端技能</h2>
+                        <div class="card-body">
+                          <h5 class="card-title">HTML</h5>
+                          <h5 class="card-title">CSS</h5>
+                          <p class="card-text">Using bootstrap grid</p>    
+                          <h5 class="card-title">JAVASCRIPT</h5>
+                          <p calss="card-text">Can javascript, will learn React</p>                              
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 h-50 themed-grid-col">
+                      <div class="card h-100">
+                          <h2 class="card-header">後端技能</h2>
+                          <div class="card-body">
+                            <h5 class="card-title">PHP</h5>
+                            <p class="card-text">PHP learn in the college</p>
+                            <h5 class="card-title">Node.js</h5>     
+                            <p class="card-text">Frame Express,View engine HBS,API connect</p>                            
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+    {{>footer}}
+    {{>js}}
+</body>
+</html>
