@@ -19,19 +19,19 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-
+        title: 'Main page'
     })
 })
 
 app.get('/introduction', (req, res) => {
     res.render('introduction', {
-
+        title: 'introduction'
     })
 })
 
 app.get('/learn', (req, res) => {
     res.render('learn', {
-
+        title: 'learn-list'
     })
 })
 
