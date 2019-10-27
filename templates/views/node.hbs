@@ -12,26 +12,19 @@
     </style>
     <title>{{title}}</title>
 </head>
-<body>
+<body class="d-flex flex-column">
     {{>header}}
-    <div class="container-fluid">
+    <div id="page-content" class="container-fluid">
     <div class="row">
         <div class="col-0 col-md-1">               
         </div>
-        <div class="col-4 col-md-2">
-            <a href="/learn" class="list-group-item active">
-                學習列表
-            </a>
-            <a href="#" class="list-group-item">前端技能</a>
-            <a href="#" class="list-group-item">HTML</a>
-            <a href="#" class="list-group-item">CSS</a>
-            <a href="#" class="list-group-item">Bootstrap</a>
-            <a href="#" class="list-group-item">後端技能</a>
-            <a href="/node" class="list-group-item">Node.js</a>
+        <div class="col-3 col-md-2 sideBar">
+            {{>sideLink}}
         </div>  
-        <div class="col-8 col-md-6 content">
-            <h2>Weather</h2>
+        <div class="col-9 col-md-6 content">
+            <h2>Weather Today</h2>
             <p>Use this site to get your weather!</p>
+            <p>available in English</p>
             <form>
             <input placeholder="Location">
             <button>Search</button>

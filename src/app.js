@@ -69,6 +69,10 @@ app.get('/weather', (req, res) => {
         })
     })
 })
+app.get('/test', (req, res) => {
+    res.render('button', {
+    })
+})
 
 app.get('*', (req, res) => {
     res.render('404', {

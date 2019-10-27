@@ -8,25 +8,30 @@
     <style>
     .content{
         background-color: #F6F7EB;
+        overflow:auto;
+        flex:1;
     }
     .bar{
       background-color: #C3C3C3;
-    } 
+    }
+    .sideBar{
+        padding: 0;
+    }
     </style>
     <title>{{title}}</title>
 </head>
-<body>
+<body class="d-flex flex-column">
     {{>header}}
-    <div class="container-fluid">
+    <div id="page-content" class="container-fluid">
         <div class="row">
             <div class="col-0 col-md-1">               
             </div>
-            <div class="col-4 col-md-2">
-                <a href="#" class="list-group-item active">
+            <div class="col-3 col-md-2 sideBar">
+                <a href="#" class="list-group-item active sideLink" style="text-decoration: none;">
                     自我介紹
                 </a>
             </div>  
-            <div class="col-8 col-md-6 content">
+            <div class="col-9 col-md-6 content">
                 <h2>自我介紹</h2>
                 <p>
                 您好，我是廖宏文，我擅長思考問題，設法排除困難。我的個性外冷內熱，容易融入人群，我有正面積極的態度，勇於接受挑戰(自選傘兵)，我在弘光科技大學就讀資訊管理系，在系上訓練了我的思考邏輯、資料收集、分工撰寫等能力以及知識，我喜歡合作競爭，正面的競爭能提升團隊向心力、溝通能力、處理效率，我在團隊合作中能找出問題和不合理的地方，進一步釐清，並蒐集資訊提出解決的方案。<br>
