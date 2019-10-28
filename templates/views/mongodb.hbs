@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>css}}
+    <style>
+    .content{
+        background-color: #F6F7EB;
+    }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body class="d-flex flex-column">
+    {{>header}}
+    <div id="page-content" class="container-fluid">
+    <div class="row">
+        <div class="col-0 col-md-1">               
+        </div>
+        <div class="col-3 col-md-2 sideBar">
+            {{>sideLink}}
+        </div>  
+        <div class="col-9 col-md-6 content">
+            <h2>Mongodb</h2>
+            <p>在學Node.js的時候看到大量的文章都推薦MongoDB作為其資料庫系統,
+                目前使用Robo3T作為管理介面,並且將CRUD大致語法操作過.
+                待React學習後會將網頁做個改版.
+            </p>
+        </div>
+        <div class="col-12 col-md-3"></div>
+    </div>               
+    </div>
+    {{>footer}}
+    {{>js}}
+</body>
+</html>

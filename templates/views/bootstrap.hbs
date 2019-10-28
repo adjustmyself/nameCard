@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>css}}
+    <style>
+    .content{
+        background-color: #F6F7EB;
+    }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body class="d-flex flex-column">
+    {{>header}}
+    <div id="page-content" class="container-fluid">
+    <div class="row">
+        <div class="col-0 col-md-1">               
+        </div>
+        <div class="col-3 col-md-2 sideBar">
+            {{>sideLink}}
+        </div>  
+        <div class="col-9 col-md-6 content">
+            <h2>Bootstrap</h2>
+            <p>目前這個版本的網站是以bootstrap來進行RWD design,我並沒有套用其他華麗的templates,
+                我先從官方文件了解到他RWD grid的設計方式,再來部屬網站的空間.
+            </p>
+            <p>
+                官方的css以及js可改動性不高,若是要達到其他templates的效果,需要下載原始檔案來進行編輯,
+                原始檔案是Sass檔案,若是鑽研需要花費的時間不如去學習一個CSS的框架,
+                因此目前的網站將暫時以bootstrap原始的方式呈現,後續將以React.js為基底更新網頁.
+            </p>
+
+        </div>
+        <div class="col-12 col-md-3"></div>
+    </div>               
+    </div>
+    {{>footer}}
+    {{>js}}
+</body>
+</html>

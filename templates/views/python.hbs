@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>css}}
+    <style>
+    .content{
+        background-color: #F6F7EB;
+    }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body class="d-flex flex-column">
+    {{>header}}
+    <div id="page-content" class="container-fluid">
+    <div class="row">
+        <div class="col-0 col-md-1">               
+        </div>
+        <div class="col-3 col-md-2 sideBar">
+            {{>sideLink}}
+        </div>  
+        <div class="col-9 col-md-6 content">
+            <h2>Python</h2>
+            <p>
+                在大學的時候就知道Python的強大,現在學習起來真的是有它厲害的地方,
+                Python的套件包羅萬象,不僅實用還很好用,不管是資料分析,圖表製作,爬蟲,
+                機器學習,甚至網站也有套件.
+            </p>
+            <p>
+                目前專案是以Django實作一個webcam server,透過前端的webcam將照片以及資料送往後台,
+                後台的python程式將機器學習的model與照片進行比對,進而分析產品的狀態.
+            </p>
+
+        </div>
+        <div class="col-12 col-md-3"></div>
+    </div>               
+    </div>
+    {{>footer}}
+    {{>js}}
+</body>
+</html>

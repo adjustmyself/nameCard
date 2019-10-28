@@ -37,9 +37,51 @@ app.get('/learn', (req, res) => {
     })
 })
 
+app.get('/html', (req, res) => {
+    res.render('html', {
+        title: 'html'
+    })
+})
+
+app.get('/cssContent', (req, res) => {
+    res.render('cssContent', {
+        title: 'css'
+    })
+})
+
+app.get('/bootstrap', (req, res) => {
+    res.render('bootstrap', {
+        title: 'bootstrap'
+    })
+})
+
 app.get('/node', (req, res) => {
     res.render('node', {
         title: 'learn-list'
+    })
+})
+
+app.get('/mongodb', (req, res) => {
+    res.render('mongodb', {
+        title: 'mongodb'
+    })
+})
+
+app.get('/react', (req, res) => {
+    res.render('react', {
+        title: 'react'
+    })
+})
+
+app.get('/python', (req, res) => {
+    res.render('python', {
+        title: 'python'
+    })
+})
+
+app.get('/php', (req, res) => {
+    res.render('php', {
+        title: 'php'
     })
 })
 

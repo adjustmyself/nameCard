@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>css}}
+    <style>
+    .content{
+        background-color: #F6F7EB;
+    }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body class="d-flex flex-column">
+    {{>header}}
+    <div id="page-content" class="container-fluid">
+    <div class="row">
+        <div class="col-0 col-md-1">               
+        </div>
+        <div class="col-3 col-md-2 sideBar">
+            {{>sideLink}}
+        </div>  
+        <div class="col-9 col-md-6 content">
+            <h2>HTML</h2>
+            <img class="img-fluid" src="/img/html.png">
+
+        </div>
+        <div class="col-12 col-md-3"></div>
+    </div>               
+    </div>
+    {{>footer}}
+    {{>js}}
+</body>
+</html>

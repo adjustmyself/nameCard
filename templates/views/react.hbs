@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{>css}}
+    <style>
+    .content{
+        background-color: #F6F7EB;
+    }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body class="d-flex flex-column">
+    {{>header}}
+    <div id="page-content" class="container-fluid">
+    <div class="row">
+        <div class="col-0 col-md-1">               
+        </div>
+        <div class="col-3 col-md-2 sideBar">
+            {{>sideLink}}
+        </div>  
+        <div class="col-9 col-md-6 content">
+            <h2>React</h2>
+            <p>
+                React以virtual dom加上jsx語法來進行網頁的編輯,
+                透過virtual dom可以減少dom的負擔,並且反應速度非常的快.
+            </p>
+            <p>
+                React以component為單位,每個component根據用途可以為類別或是方法的,
+                需要追蹤狀態以改變其子component的component以類別為主,若是一般功能的
+                component則以方法宣告.
+            </p>
+
+        </div>
+        <div class="col-12 col-md-3"></div>
+    </div>               
+    </div>
+    {{>footer}}
+    {{>js}}
+</body>
+</html>
